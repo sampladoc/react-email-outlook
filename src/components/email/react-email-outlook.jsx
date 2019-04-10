@@ -1,9 +1,8 @@
 import React, { Component, PropTypes } from 'react'
-import { observer } from 'mobx-react'
 import * as queryString from 'query-string'
 
 
-@observer class Email extends Component {
+class Email extends Component {
   static propTypes = {
     location: PropTypes.string,
   }
@@ -12,7 +11,7 @@ import * as queryString from 'query-string'
   }
   componentWillMount() {
     const parsed = queryString.parse(location.search)
-    window.location.href = `mailto:${parsed.subject}?subject=${parsed.subject}
+    window.location.href = `mailto:${parsed.email}?subject=${parsed.subject}
     &body=`
 
   }
