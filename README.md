@@ -1,4 +1,4 @@
-# react-email-outlook
+# react-email-outlook: WIP
 Import Email from react-email-outlook into Routes.jsx and configure.
 
 Add "<a" href='http://mydomain.com?subject=mysubject&email=myemail' target='_blank' ">" tag
